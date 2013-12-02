@@ -21,7 +21,7 @@ Now let's see how it works:
 - Implement sever-side code
 - Add callbacks
 
-...html
+```html
 
 
 	<div id="hd"><div class='section section-navi'>Initial div!</div></div>
@@ -45,7 +45,7 @@ Now let's see how it works:
 
 	</script>
 
-...
+```
 
 
 ## Server-side response:
@@ -53,7 +53,7 @@ Now let's see how it works:
 
 > GET /loading/example/uri
 
-...json
+```json
 [{
 	"postion":"hd",
 	"section":"navi",
@@ -63,6 +63,6 @@ Now let's see how it works:
 	"section":"another-section",
 	"data":"We support multi section in a response!"
 }]
-...
+```
 
 ## That's all.
