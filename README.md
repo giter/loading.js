@@ -1,9 +1,9 @@
 Loading.js
 ==========
 
-This `loading.js` ajax engine is a pure javascript web-development protocol for component-based web development.
+This `loading.js` is a web-development protocol for component-based web development.
 
-It is very simple that I think every web developer can understand it from source code.
+It's pure javascript and simple enough so that I think everyone can understand it from source code.
 
 ## Loading.js in brief:
 
