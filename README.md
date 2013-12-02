@@ -50,10 +50,10 @@ Now let's see how it works:
 
 ## Server-side response:
 
-...json
 
 > GET /loading/example/uri
 
+...json
 [{
 	"postion":"hd",
 	"section":"navi",
@@ -63,6 +63,6 @@ Now let's see how it works:
 	"section":"another-section",
 	"data":"We support multi section in a response!"
 }]
-
+...
 
 ## That's all.
