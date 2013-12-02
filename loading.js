@@ -24,21 +24,21 @@ $.extend({ loading: function(url,opts){
 
 					sec = sections[i];
 
-					if($("#"+sec.pos).size() > 0) {
+					if($("#"+sec.position).size() > 0) {
 
-						var h = "#"+sec.pos + " .section-"+sec.id;
+						var h = "#"+sec.position + " .section-"+sec.id;
 
 						if($(h).size()>0){
 							$(h).first().each(function(){
 								this.innerHTML = (sec.data);
 							});
 						}else{
-							var o = $("<div class='section section-"+sec.id+"'>"+"</div>");
+							var o = $("<div class='section section-"+sec.section+"'>"+"</div>");
 							o[0].innerHTML = (sec.data);
-							$("#"+sec.pos).prepend(o);
+							$("#"+sec.position).prepend(o);
 						}
 
-						call(sec.pos,sec.id,$(h));
+						call(sec.position,sec.section,$(h));
 					}
 				}
 
