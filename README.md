@@ -9,15 +9,11 @@ It is very simple that I think every web developer can understand it from source
 
 Now let's see how it works:
 
-  First let's think web page development as ` html = section + callback `
-	
-  Assume that each web page can be divided into several `position`. (like `#hd`, `#bd`, `#ft`, `#aside`)
-
-  And each `position` may have some unique `section`.(like `#hd .sec-navi`, `#bd .sec-list`)
-	
-  So we can bind javacript callback on this `section`. (like `call("hd","navi",function(){ console.log("Hello World!"); }`)
-
-  Finally we not care about how server-side implement this protocol.
+- First let's think web page development as ` html = section + callback `
+- Assume that each web page can be divided into several `position`. (like `#hd`, `#bd`, `#ft`, `#aside`)
+- And each `position` may have some unique `section`.(like `#hd .sec-navi`, `#bd .sec-list`)
+- So we can bind javacript callback on this `section`. (like `call("hd","navi",function(){ console.log("Hello World!"); }`)
+- Finally we not care about how server-side implement this protocol.
 
 ## Usage:
 
