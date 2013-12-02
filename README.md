@@ -1,9 +1,9 @@
 Loading.js
 ==========
 
-This `loading.js` is a web-development protocol for component-based web development.
-
-It's pure javascript and simple enough so that I think everyone can understand it from source code.
+- This `loading.js` is a component-based web development protocol.
+- It's pure javascript.
+- It's simple, I think everyone can understand it from source code.
 
 ## Loading.js in brief:
 
