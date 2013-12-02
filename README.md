@@ -34,7 +34,7 @@ Now let's see how it works:
 	</form>
 
 	<script src='jquery.js></script>
-	<script src='loading.js></script>
+	<script src='loading.js'></script>
 
 	<script>
 
