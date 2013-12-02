@@ -22,10 +22,8 @@ Now let's see how it works:
 - Add callbacks
 
 ```html
-
-
-	<div id="hd"><div class='section section-navi'>Initial div!</div></div>
-	<div id="another-pos"></div>
+	<div class='position' id="hd"><div class='section section-navi'>Initial div!</div></div>
+	<div class='position' id="another-pos"></div>
 
 	<a href='#' class='loading' uri='./link.json'>Click to loading</a>
 
@@ -37,10 +35,16 @@ Now let's see how it works:
 	<script src='./loading.js'></script>
 
 	<script>
+
 		bind("hd","navi",function(target){
 
 			console.log("Hello world!");
 		});
+
+		$(function(){
+			$.loading(); //init call.
+		});
+
 	</script>
 ```
 

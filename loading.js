@@ -3,7 +3,33 @@
  *   - giter(nubix@qq.com) 
  */
 
-$.extend({ loading: function(url,opts){
+$.extend({ loading: function(){
+
+		if(arguments.length == 0){
+
+
+			$(".position").each(function(){
+
+				var position = $(this).attr("id");
+				if(!!!position) return;
+			
+
+				$(".section").each(function(){
+					
+					var section = $(".section").attr("class").match(/section-([^\s]+)/)[1] || undefined;
+					if(!!!section) return;
+
+					call(position,section,$(this));
+				});
+			});
+
+			return;
+		}
+
+
+
+		url = arguments[0] || undefined;
+		opts = arguments[1] || undefined;
 
 		opts = $.extend({
 			method: "get",
