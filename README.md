@@ -52,11 +52,11 @@ Now let's see how it works:
 
 ```json
 [{
-	"postion":"hd",
+	"position":"hd",
 	"section":"navi",
 	"data":"This is navi"
 },{
-	"positoin":"another-pos",
+	"position":"another-pos",
 	"section":"another-section",
 	"data":"We support multi section in a response!"
 }]
