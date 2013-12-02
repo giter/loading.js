@@ -1,0 +1,9 @@
+[{
+    "position":"hd",
+    "section":"navi",
+    "data":"This is navi"
+},{
+    "position":"another-pos",
+    "section":"another-section",
+    "data":"We support multi section in a response!"
+}]

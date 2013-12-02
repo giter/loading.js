@@ -1,0 +1,9 @@
+[{
+    "position":"hd",
+    "section":"navi",
+    "data":"From form submit!"
+},{
+    "position":"another-pos",
+    "section":"another-section",
+    "data":"Form response!"
+}]
