@@ -33,7 +33,7 @@ Now let's see how it works:
 		<input type='submit' value='Submit to loading' />
 	</form>
 
-	<script src='jquery.js></script>
+	<script src='jquery.js'></script>
 	<script src='loading.js'></script>
 
 	<script>
