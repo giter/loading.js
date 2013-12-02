@@ -8,7 +8,7 @@ $.extend({ loading: function(url,opts){
 		opts = $.extend({
 			method: "get",
 			cache: false,
-			data: {}
+			data: {} ,
 			dataType: "json"
 		},opts);
 
@@ -26,7 +26,7 @@ $.extend({ loading: function(url,opts){
 
 					if($("#"+sec.position).size() > 0) {
 
-						var h = "#"+sec.position + " .section-"+sec.id;
+						var h = "#"+sec.position + " .section-"+sec.section;
 
 						if($(h).size()>0){
 							$(h).first().each(function(){
@@ -75,15 +75,17 @@ function call(pos,id,target){
 
 $(function(){
 
-	$(".loading").live("click",function(){
+	$("body").delegate(".loading" ,"click",function(){
 
 		if($(this).is("form")) return true;
+		
+		if(!!!$(this).attr("uri")) $(this).attr("uri",$(this).attr("href"));
 
 		$(this).attr("uri") && $.loading($(this).attr("uri"),{method:$(this).attr("method")});
 		return false;
 	});
 
-	$("form.loading").live("submit",function(){
+	$("body").delegate("form.loading" ,"submit",function(e){
 
 		var p = ($(this).attr("action")||"").match(/([^#]*)?(#.*)?$/)
 		$.loading((p[1]||"") + (p[2]||""),{method:$(this).attr("method"),data:$(this).serialize()});

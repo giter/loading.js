@@ -27,24 +27,21 @@ Now let's see how it works:
 	<div id="hd"><div class='section section-navi'>Initial div!</div></div>
 	<div id="another-pos"></div>
 
-	<a href='#' class='loading' uri='/loading/example/uri'>Click to loading</a>
+	<a href='#' class='loading' uri='./link.json'>Click to loading</a>
 
-	<form class='loading' action='/loading/example/uri' method='get'>
+	<form class='loading' action='./form.json' method='get'>
 		<input type='submit' value='Submit to loading' />
 	</form>
 
-	<script src='jquery.js'></script>
-	<script src='loading.js'></script>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+	<script src='./loading.js'></script>
 
 	<script>
-
 		bind("hd","navi",function(target){
 
 			console.log("Hello world!");
 		});
-
 	</script>
-
 ```
 
 
