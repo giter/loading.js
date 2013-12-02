@@ -89,6 +89,4 @@ $(function(){
 		$.loading((p[1]||"") + (p[2]||""),{method:$(this).attr("method"),data:$(this).serialize()});
 		return false;
 	});
-
-	call("page",$("body").attr("id"),$("body"));
 });
