@@ -29,7 +29,7 @@ Now let's see how it works:
 
 	<a href='#' class='loading' uri='/loading/example/uri'>Click to loading</a>
 
-	<form action='/loading/example/uri' method='get'>
+	<form class='loading' action='/loading/example/uri' method='get'>
 		<input type='submit' value='Submit to loading' />
 	</form>
 
