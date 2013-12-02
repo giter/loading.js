@@ -1,0 +1,32 @@
+<html>
+
+	<head>
+		<title>This is a loading.js example page!</title>
+	</head>
+
+	<body>
+
+			<div id="hd"><div class='section section-navi'>Initial div!</div></div>
+			<div id="another-pos"></div>
+
+			<a href='#' class='loading' uri='/loading/example/uri'>Click to loading</a>
+
+			<form action='/loading/example/uri' method='get'>
+				<input type='submit' value='Submit to loading' />
+			</form>
+
+			<script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+			<script src='loading.js'></script>
+
+			<script>
+
+				bind("hd","navi",function(target){
+
+					console.log("Hello world!");
+				});
+
+			</script>
+
+	</body>
+
+</html>
