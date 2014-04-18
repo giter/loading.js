@@ -14,7 +14,7 @@ $.extend({ loading: function(){
         if(!!!position) return;
       
 
-        $(".section").each(function(){
+        $(this).find(".section").each(function(){
           
           var section = $(".section").attr("class").match(/section-([^\s]+)/)[1] || undefined;
           if(!!!section) return;
