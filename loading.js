@@ -16,7 +16,7 @@ $.extend({ loading: function(){
 
         $(this).find(".section").each(function(){
           
-          var section = $(".section").attr("class").match(/section-([^\s]+)/)[1] || undefined;
+          var section = $(this).attr("class").match(/section-([^\s]+)/)[1] || undefined;
           if(!!!section) return;
 
           call(position,section,$(this));
